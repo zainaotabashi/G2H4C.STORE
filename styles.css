@@ -1,0 +1,215 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    background: white;
+    font-family: Arial, sans-serif;
+}
+
+/* ------------------------------
+   NAVIGATION (OPTION A LAYOUT)
+--------------------------------*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    padding: 15px 25px;
+}
+
+.logo {
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* Nav Links */
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a.active {
+    text-decoration: underline;
+}
+
+/* Donate Button */
+.donate-btn {
+    background: #ff6600;
+    padding: 8px 18px;
+    border-radius: 6px;
+    color: white !important;
+    text-decoration: none;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.donate-btn.active {
+    background: #ff4500;
+}
+
+/* ------------------------------
+   CIRCLE LOGO + CURVED TEXT
+--------------------------------*/
+.circle-logo-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.circle-logo {
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border: 6px solid #ffffff;
+}
+
+
+
+/* ------------------------------
+   HERO SECTION
+--------------------------------*/
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: white;
+}
+
+.hero-title {
+    font-size: 28px;
+    max-width: 700px;
+    margin: 0 auto 20px auto;
+    color: #333;
+}
+
+.cta {
+    background: #0077ff;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* ------------------------------
+   CONTENT SECTIONS (HOME, ABOUT, WORK)
+--------------------------------*/
+.section {
+    padding: 50px 25px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* ------------------------------
+   PROGRAM LIST (HOME PAGE)
+--------------------------------*/
+.program-list {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.program {
+    background: #eee;
+    padding: 20px;
+    flex: 1;
+    border-radius: 6px;
+}
+
+.program h3 {
+    margin-bottom: 10px;
+}
+
+/* ------------------------------
+   VOLUNTEER FORM (IF USED LATER)
+--------------------------------*/
+#volunteerForm {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* ------------------------------
+   FOOTER
+--------------------------------*/
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+}
+
+/* ------------------------------
+   MOBILE RESPONSIVENESS
+--------------------------------*/
+@media (max-width: 768px) {
+    .nav-links {
+        gap: 15px;
+        font-size: 16px;
+    }
+
+    .circle-logo {
+        width: 300px;
+        height: 300px;
+    }
+    .hero-title {
+        font-size: 24px;
+    }
+}
+/* For New Mission Format */
+.mission-section {
+    text-align: center;
+    padding: 60px 25px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.mission-section h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.mission-section p {
+    font-size: 22px;
+    line-height: 1.6;
+    max-width: 750px;
+    margin: 0 auto;
+    color: #555;
+}
